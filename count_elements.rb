@@ -3,7 +3,8 @@ def count_elements(array)
   hash = array.uniq
   array.each do |elem|
     if hash.keys.find(elem)
-
+      hash[hash.keys.find(elem)].value += 1
+    end
   end
   puts hash
 end
