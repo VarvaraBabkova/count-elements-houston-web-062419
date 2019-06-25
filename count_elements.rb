@@ -4,7 +4,7 @@ def count_elements(array)
   array.each do |elem|
     ar_uniq.each do |key|
         if key == elem
-          hash[key] += 1
+          hash[key].value += 1
         end
     end
   end
