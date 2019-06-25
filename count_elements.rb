@@ -1,4 +1,6 @@
 def count_elements(array)
-  # code goes here
+  hash = {}
+  hash = array.unique
+  puts hash
 end
  
