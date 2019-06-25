@@ -11,5 +11,5 @@ def count_elements(array)
         end
     end
   end
-  puts hash
+  return hash
 end
