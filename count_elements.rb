@@ -1,9 +1,11 @@
 def count_elements(array)
   hash = {}
-  hash = array.uniq
+  ar_uniq = array.uniq
   array.each do |elem|
-    if hash.keys.find(elem)
-      hash[hash.keys.find(elem)].value += 1
+    ar_uniq.each do |key|
+        if key == elem
+          hash[key] += 1
+        end
     end
   end
   puts hash
